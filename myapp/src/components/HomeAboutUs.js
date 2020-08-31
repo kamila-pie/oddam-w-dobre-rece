@@ -18,8 +18,8 @@ const HomeAboutUs = () => {
                         <img className={'signature'} src={signature} alt={'signature'}/>
                     </div>
                 </Col>
-                <Col sm={5}>
-                    <img src={people} className={'peopleImg'} alt={'people'}/>
+                <Col className={'peopleImg'} sm={5}>
+                    {/*<img src={people}  alt={'people'}/>*/}
                 </Col>
             </Row>
         </section>

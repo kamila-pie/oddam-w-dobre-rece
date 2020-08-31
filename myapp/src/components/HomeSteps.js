@@ -1,6 +1,5 @@
 import React from 'react';
 import {Col, Row} from "react-bootstrap";
-import decor from "../assets/Decoration.svg";
 import icon1 from "../assets/Icon-1.svg";
 import icon2 from "../assets/Icon-2.svg";
 import icon3 from "../assets/Icon-3.svg";

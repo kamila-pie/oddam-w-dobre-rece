@@ -9,6 +9,7 @@
   align-items: center;
   cursor: pointer;
 }
+
 .navEl {
   display: flex;
   justify-content: center;
@@ -16,16 +17,27 @@
   height: 42px;
   padding: 9px 24px;
   color: $color-secondary;
-  font-size: 18px;
   &:hover {
     //transition: background-color .5s;
     border: 1px solid $color-secondary;
   }
-  a {
+  a, Link {
     text-decoration: none;
+    color: $color-secondary;
+    font-size: 18px;
   }
 }
 
 .navListAuth {
   font-size: 14px;
+  margin-bottom: 17px;
+  .navListAuthEl {
+    height: 36px;
+    padding: 9px 10px;
+    margin: 35px 0 0 20px;
+    &:hover {
+      transition: .4s;
+      border: 1px solid $color-accent;
+    }
+  }
 }

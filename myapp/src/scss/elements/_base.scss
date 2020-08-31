@@ -1,0 +1,35 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $font-base;
+}
+
+h1 {
+  font-size: 38px;
+  line-height: 55px;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+p {
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: 300;
+}
+
+.btn {
+  width: 310px;
+  height: 120px;
+  background: #00000000 0% 0% no-repeat padding-box;
+  border: 0.75px solid $color-secondary;
+  font-weight: 300;
+  font-size: 40px;
+}
+
+.row {
+  margin: 0;
+}

@@ -24,10 +24,13 @@ p {
 .btn {
   width: 310px;
   height: 120px;
-  background: #00000000 0% 0% no-repeat padding-box;
+  background: #fff;
   border: 0.75px solid $color-secondary;
+  box-sizing: border-box;
   font-weight: 300;
-  font-size: 40px;
+  font-size: 2rem;
+  padding: 13px;
+  margin: 22px;
 }
 
 .row {

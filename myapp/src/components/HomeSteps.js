@@ -5,14 +5,13 @@ import icon1 from "../assets/Icon-1.svg";
 import icon2 from "../assets/Icon-2.svg";
 import icon3 from "../assets/Icon-3.svg";
 import icon4 from "../assets/Icon-4.svg";
+import TitleDecor from "./TitleDecor";
+import Button from "./Button";
 
 const HomeSteps = () => {
     return (
         <section className={'stepsSection'}>
-            <Row className={'stepsRowHeader'}>
-                <h1>Wystarczą 4 proste kroki</h1>
-                <img className={'decor'} src={decor} alt={'decor'}/>
-            </Row>
+            <TitleDecor text={'Wystarczą 4 proste kroki'}/>
             <Row className={'stepsRowIcons'}>
                 <Col>
                     <img src={icon1} alt={'shirt'}/>
@@ -35,7 +34,7 @@ const HomeSteps = () => {
                     <p>kurier przyjedzie w dogodnym terminie</p>
                 </Col>
             </Row>
-            <button className={'btn'}>ODDAJ RZECZY</button>
+            <Button text={'ODDAJ RZECZY'}/>
         </section>
     )
 }

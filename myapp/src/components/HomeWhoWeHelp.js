@@ -1,11 +1,10 @@
 import React from 'react';
-import decor from "../assets/Decoration.svg";
+import TitleDecor from "./TitleDecor";
 
 const HomeWhoWeHelp = () => {
     return (
         <section className={'sectionHelp'}>
-            <h1>Komu pomagamy?</h1>
-            <img className={'decor'} src={decor} alt={'decor'}/>
+            <TitleDecor text={'Komu pomagamy?'}/>
         </section>
     )
 }

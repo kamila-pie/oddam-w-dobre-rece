@@ -1,6 +1,7 @@
 .homeContainer {
   background-image: url("../../assets/Home-Hero-Image.jpg");
-  background-size: cover;
+  background-position: left center;
+  background-repeat: no-repeat;
   left: -50px;
   height: 100vh;
   display: flex;
@@ -11,6 +12,10 @@
 .decorMain {
   justify-content: center;
   margin: 25px 0 65px;
+}
+
+.homeMain {
+  margin: 0 0 0 auto;
 }
 
 

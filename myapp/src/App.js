@@ -1,8 +1,8 @@
 import React from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import Home from "./components/Home";
-import Login from "./components/Login";
-import Register from "./components/Register";
+import HomeLogin from "./components/HomeLogin";
+import HomeRegister from "./components/HomeRegister";
 
 
 const App = () => {
@@ -11,8 +11,8 @@ const App = () => {
         <>
             <Switch>
               <Route exact path={'/'} component={Home}/>
-              <Route path={'/logowanie'} component={Login}/>
-              <Route path={'/rejestracja'} component={Register}/>
+              <Route path={'/logowanie'} component={HomeLogin}/>
+              <Route path={'/rejestracja'} component={HomeRegister}/>
             </Switch>
         </>
       </BrowserRouter>

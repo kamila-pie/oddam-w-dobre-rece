@@ -1,0 +1,38 @@
+.sectionHelp {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.sectionHelpBtns {
+  display: flex;
+  justify-content: center;
+}
+.howWeBtn {
+  height: 80px;
+  background-color: #fff;
+  padding: 11px 50px;
+  font-size: 24px;
+  border-color: white;
+  &:hover {
+    border: 1px solid $color-secondary;
+  }
+}
+.helpContainer {
+  margin: 70px auto;
+}
+
+.HelpDetailsRow {
+  font-family: $font-alt;
+  margin: 20px auto;
+}
+.HelpDetails {
+
+  h2 {
+    font-size: 26px;
+  }
+}
+.HelpThings {
+  text-align: right;
+}

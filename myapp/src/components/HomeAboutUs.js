@@ -1,7 +1,5 @@
 import React from 'react';
-import decor from './../assets/Decoration.svg';
 import signature from './../assets/Signature.svg';
-import people from './../assets/People.jpg';
 import {Col, Row} from "react-bootstrap";
 import TitleDecor from "./TitleDecor";
 

@@ -2,10 +2,14 @@ import React from 'react';
 import {Col, Row} from "react-bootstrap";
 import instagram from "../assets/Instagram.svg";
 import fb from "../assets/Facebook.svg";
+import TitleDecor from "./TitleDecor";
+import HomeContact from "./HomeContact";
 
 const Footer = () => {
     return (
-       <footer>
+       <footer className={'footerContainer'}>
+           <TitleDecor text={'Skontaktuj się z nami'}/>
+           <HomeContact/>
            <Row className={'footer'}>
                <p>Copyright by Coders Lab</p>
                <Col className={'socialIcons'}>

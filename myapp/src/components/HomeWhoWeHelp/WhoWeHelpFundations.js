@@ -1,5 +1,5 @@
 import React from 'react';
-import {Col, Container, Row} from "react-bootstrap";
+import {Container, Row} from "react-bootstrap";
 import Fundations from "./Fundations";
 
 const WhoWeHelpFundations = (props) => {

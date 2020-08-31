@@ -1,4 +1,10 @@
-footer {
+.footerContainer {
   display: flex;
-  justify-content: flex-end;
+  align-items: flex-end;
+  flex-direction: column;
+  background-image: url("../../assets/Background-Contact-Form.jpg");
+  height: 100vh;
+  background-size: cover;
+  overflow: hidden;
+  background-repeat: no-repeat;
 }

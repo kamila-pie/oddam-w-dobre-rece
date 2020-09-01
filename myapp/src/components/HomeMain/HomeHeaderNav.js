@@ -1,10 +1,11 @@
 import React from 'react';
 import HomeLogin from "./HomeLogin";
 import HomeRegister from "./HomeRegister";
-import {Row} from "react-bootstrap";
-import {Link} from "react-router-dom";
+import { Row } from "react-bootstrap";
+import { Link } from "react-router-dom";
+import { Link as LinkScroll } from "react-scroll";
 
-const HomeHeader = () => {
+const HomeHeaderNav = () => {
     return (
         <header className={'topMenu'}>
             <Row className={'navLinkContainer'}>
@@ -26,4 +27,4 @@ const HomeHeader = () => {
     )
 }
 
-export default HomeHeader;
+export default HomeHeaderNav;

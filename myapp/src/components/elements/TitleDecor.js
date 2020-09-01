@@ -1,5 +1,5 @@
 import React from "react";
-import decor from "../assets/Decoration.svg";
+import decor from "../../assets/Decoration.svg";
 
 const TitleDecor = (props) => {
     return (

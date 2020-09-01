@@ -1,5 +1,5 @@
 import React from 'react';
-import TitleDecor from "../TitleDecor";
+import TitleDecor from "../elements/TitleDecor";
 import HowWeBtn from "./WhoWeBtn";
 import {Row} from "react-bootstrap";
 import WhoWeHelpFundations from "./WhoWeHelpFundations";

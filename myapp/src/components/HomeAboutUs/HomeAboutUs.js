@@ -1,7 +1,7 @@
 import React from 'react';
-import signature from './../assets/Signature.svg';
+import signature from '../../assets/Signature.svg';
 import {Col, Row} from "react-bootstrap";
-import TitleDecor from "./TitleDecor";
+import TitleDecor from "../elements/TitleDecor";
 
 const HomeAboutUs = () => {
     return (

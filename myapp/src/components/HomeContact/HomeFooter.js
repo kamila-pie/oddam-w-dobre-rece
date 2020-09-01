@@ -1,8 +1,8 @@
 import React from 'react';
 import {Col, Row} from "react-bootstrap";
-import instagram from "../assets/Instagram.svg";
-import fb from "../assets/Facebook.svg";
-import TitleDecor from "./TitleDecor";
+import instagram from "../../assets/Instagram.svg";
+import fb from "../../assets/Facebook.svg";
+import TitleDecor from "../elements/TitleDecor";
 import HomeContact from "./HomeContact";
 
 const Footer = () => {

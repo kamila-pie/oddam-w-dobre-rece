@@ -1,6 +1,11 @@
 .homeSection {
   display: flex;
+  flex-direction: column;
   height: 100vh;
+}
+
+.homeMainWrapper {
+  display: flex;
 }
 
 .homeBg {
@@ -10,11 +15,45 @@
   overflow: hidden;
   background-repeat: no-repeat;
   width: 800px;
+  height: 100vh;
 }
 
 .homeMain {
+  display: flex;
+  flex-direction: column;
   text-align: center;
   padding-right: 10px;
+}
+
+.btnWrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.arrowIconWrapper{
+  margin: 0 auto;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  cursor: pointer;
+  img {
+    animation: scrollTop 0.5s alternate ease infinite;
+  }
+}
+.arrowIconWrapperToTop {
+  margin: 0 auto;
+  cursor: pointer;
+  img {
+    animation: scrollTop 0.5s alternate ease infinite;
+  }
+}
+@keyframes scrollTop {
+  from {
+    transform: translateY(2px);
+  }
+  to {
+    transform: translateY(-1px);
+  }
 }
 
 .homeThreeCol {
@@ -46,12 +85,6 @@
   align-content: space-around;
   padding: 50px 0;
 }
-
-.btn {
-    text-align: center;
-    display: block;
-    margin: 50px auto;
-  }
 
 .stepsRowIcons {
   background-color: $color-primary;

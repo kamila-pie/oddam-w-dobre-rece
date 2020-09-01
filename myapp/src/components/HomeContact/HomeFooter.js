@@ -1,13 +1,18 @@
 import React from 'react';
 import {Col, Row} from "react-bootstrap";
-import instagram from "../../assets/Instagram.svg";
-import fb from "../../assets/Facebook.svg";
 import TitleDecor from "../elements/TitleDecor";
 import HomeContact from "./HomeContact";
+import {animateScroll as scroll} from "react-scroll";
+import arrowIcon from "../../assets/Icon-Arrow-Up.svg";
+import instagram from "../../assets/Instagram.svg";
+import fb from "../../assets/Facebook.svg";
 
 const Footer = () => {
     return (
        <footer className={'footerContainer'} id={'sectionContact'}>
+           <div className={'arrowIconWrapperToTop'} onClick={() => scroll.scrollToTop()}>
+               <img className={'arrowIcon'} src={arrowIcon} alt={'arrow'}/>
+           </div>
            <TitleDecor text={'Skontaktuj się z nami'}/>
            <HomeContact/>
            <Row className={'footer'}>

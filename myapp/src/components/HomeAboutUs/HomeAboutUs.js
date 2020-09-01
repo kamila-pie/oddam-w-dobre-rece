@@ -5,7 +5,7 @@ import TitleDecor from "../elements/TitleDecor";
 
 const HomeAboutUs = () => {
     return (
-        <section className={'aboutUsSection'}>
+        <section className={'aboutUsSection'} id={'sectionAboutUs'}>
             <Row>
                 <Col sm={7}>
                     <div className={'aboutWrapper'}>

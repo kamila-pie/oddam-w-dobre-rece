@@ -7,7 +7,7 @@ import HomeContact from "./HomeContact";
 
 const Footer = () => {
     return (
-       <footer className={'footerContainer'}>
+       <footer className={'footerContainer'} id={'sectionContact'}>
            <TitleDecor text={'Skontaktuj się z nami'}/>
            <HomeContact/>
            <Row className={'footer'}>

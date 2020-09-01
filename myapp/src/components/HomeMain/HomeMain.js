@@ -5,7 +5,7 @@ import HomeHeaderNav from "./HomeHeaderNav";
 
 const HomeMain = () => {
     return (
-        <section className={'homeSection'}>
+        <section className={'homeSection'} id={'main'}>
             <div className={'homeBg'}/>
             <div className={'homeMain'}>
                 <HomeHeaderNav/>

@@ -6,7 +6,7 @@ import WhoWeHelpFundations from "./WhoWeHelpFundations";
 
 const HomeWhoWeHelp = () => {
     return (
-        <section className={'sectionHelp'}>
+        <section className={'sectionHelp'} id={'sectionHelp'}>
             <TitleDecor text={'Komu pomagamy?'}/>
             <Row className={'sectionHelpBtns'}>
                 <HowWeBtn text={'Fundacjom'}/>

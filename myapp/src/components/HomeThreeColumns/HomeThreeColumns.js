@@ -3,7 +3,7 @@ import {Col, Row} from "react-bootstrap";
 
 const HomeThreeColumns = () => {
     return (
-        <section className={'homeThreeCol'}>
+        <section className={'homeThreeCol'} id={'sectionAllAbout'}>
             <Row>
                 <Col>
                     <h2>10</h2>

@@ -16,7 +16,7 @@ const HomeHeaderNav = () => {
             </Row>
             <Row className={'navLinkContainer'}>
                 <ul className={'navList'}>
-                    <li className={'navEl'}><Link to={'/'}>
+                    <li className={'navEl'}>
                         <LinkScroll
                             activeClass="active"
                             to="main"
@@ -24,9 +24,9 @@ const HomeHeaderNav = () => {
                             smooth={true}
                             offset={0}
                             duration={500}
-                        >Start</LinkScroll></Link>
+                        >Start</LinkScroll>
                     </li>
-                    <li className={'navEl'}><Link to={'/'}>
+                    <li className={'navEl'}>
                         <LinkScroll
                             activeClass="active"
                             to="sectionAllAbout"
@@ -34,9 +34,9 @@ const HomeHeaderNav = () => {
                             smooth={true}
                             offset={0}
                             duration={500}
-                        >O co chodzi?</LinkScroll></Link>
+                        >O co chodzi?</LinkScroll>
                     </li>
-                    <li className={'navEl'}><Link to={'/'}>
+                    <li className={'navEl'}>
                         <LinkScroll
                             activeClass="active"
                             to="sectionAboutUs"
@@ -44,9 +44,9 @@ const HomeHeaderNav = () => {
                             smooth={true}
                             offset={0}
                             duration={500}
-                        >O nas</LinkScroll></Link>
+                        >O nas</LinkScroll>
                     </li>
-                    <li className={'navEl'}><Link to={'/'}>
+                    <li className={'navEl'}>
                         <LinkScroll
                             activeClass="active"
                             to="sectionHelp"
@@ -54,9 +54,9 @@ const HomeHeaderNav = () => {
                             smooth={true}
                             offset={0}
                             duration={500}
-                        >Fundacja i organizacje</LinkScroll></Link>
+                        >Fundacja i organizacje</LinkScroll>
                     </li>
-                    <li className={'navEl'}><Link to={'/'}>
+                    <li className={'navEl'}>
                         <LinkScroll
                             activeClass="active"
                             to="sectionContact"
@@ -64,7 +64,7 @@ const HomeHeaderNav = () => {
                             smooth={true}
                             offset={0}
                             duration={500}
-                        >Kontakt</LinkScroll></Link>
+                        >Kontakt</LinkScroll>
                     </li>
                 </ul>
             </Row>

@@ -1,19 +1,19 @@
 import React from 'react';
-import {Col, Container, Row} from "react-bootstrap";
+import {Container, Row, Col} from "react-bootstrap";
 import data from "../../data/data";
 
-const Fundations = () => {
+const Organizations = () => {
     return (
         <Container className={'helpContainer'}>
             <Row>
                 {
-                    data.organisations.fundations.map((el, index) => {
+                    data.organisations.organiz.map((el, index) => {
                         return <p key={index}>{el.title}</p>
                     })
                 }
             </Row>
             {
-                data.organisations.fundations.map((el, index) => {
+                data.organisations.organiz.map((el, index) => {
                     return (
                         <Row className={'HelpDetailsRow'}>
                             <Col className={'HelpDetails'}>
@@ -29,7 +29,6 @@ const Fundations = () => {
             }
         </Container>
     )
-};
+}
 
-export default Fundations;
-
+export default Organizations;

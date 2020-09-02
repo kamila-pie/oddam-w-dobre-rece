@@ -2,8 +2,9 @@ import React, {useState} from 'react';
 import TitleDecor from "../elements/TitleDecor";
 import HowWeBtn from "./WhoWeBtn";
 import {Row} from "react-bootstrap";
-import WhoWeHelpFundations from "./WhoWeHelpFundations";
 import Fundations from "./Fundations";
+import Organizations from "./Organizations";
+import Local from "./Local";
 
 const HomeWhoWeHelp = () => {
     let [counter, setCounter] = useState(1);
@@ -12,6 +13,10 @@ const HomeWhoWeHelp = () => {
         switch (number) {
             case 1:
             return <Fundations/>;
+            case 2:
+            return <Organizations/>;
+            case 3:
+            return <Local/>;
         }
     }
 
@@ -29,9 +34,10 @@ const HomeWhoWeHelp = () => {
                 <HowWeBtn text={'Organizacjom pozarządowym'}
                           setCounter={set}
                           id={2}/>
-                <HowWeBtn text={'Lokalnym zbiórkom'}/>
+                <HowWeBtn text={'Lokalnym zbiórkom'}
+                          setCounter={set}
+                          id={3}/>
             </Row>
-            {/*<WhoWeHelpFundations/>*/}
             {returnOrgs(counter)}
         </section>
     )

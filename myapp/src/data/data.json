@@ -1,0 +1,15 @@
+{
+  "desc": "Lorem ipsum",
+  "organisations": [
+    {
+      "id": 1,
+      "name": "Toz",
+      "desc": "Lubią zwierzęta"
+    },
+    {
+      "id": 1,
+      "name": "Otoz",
+      "desc": "Lubią zwierzęta"
+    }
+  ]
+}

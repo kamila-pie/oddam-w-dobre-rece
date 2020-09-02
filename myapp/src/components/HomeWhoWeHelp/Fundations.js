@@ -1,19 +1,24 @@
 import React from 'react';
 import {Col, Row} from "react-bootstrap";
+import data from "../../data/data";
 
-const Fundations = (props) => {
+const Fundations = () => {
+
     return (
         <Row className={'HelpDetailsRow'}>
-            <Col className={'HelpDetails'}>
-                <h2>Fundacja “Dbam o Zdrowie”</h2>
-                <p>Cel i misja: Pomoc osobom znajdującym się w trudnej sytuacji życiowej.</p>
-            </Col>
-            <Col className={'HelpThings'}>
-                <p>ubrania, jedzenie, sprzęt AGD, meble, zabawki</p>
+            <Col>
+                <p>{data.desc}</p>
+                <ul>
+                    {
+                        data.organisations.map((el, index) => {
+                            return <li key={index}>{el.name}</li>
+                        })
+                    }
+                </ul>
             </Col>
         </Row>
     )
-}
+};
 
 export default Fundations;
 

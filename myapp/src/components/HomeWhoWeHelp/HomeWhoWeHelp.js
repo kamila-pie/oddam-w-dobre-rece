@@ -12,11 +12,13 @@ const HomeWhoWeHelp = () => {
     function returnOrgs(number) {
         switch (number) {
             case 1:
-            return <Fundations/>;
+                return <Fundations/>;
             case 2:
-            return <Organizations/>;
+                return <Organizations/>;
             case 3:
-            return <Local/>;
+                return <Local/>;
+            default:
+                return <Fundations/>;
         }
     }
 

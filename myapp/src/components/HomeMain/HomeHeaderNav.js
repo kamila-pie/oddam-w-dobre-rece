@@ -2,7 +2,6 @@ import React from 'react';
 import HomeLogin from "./HomeLogin";
 import HomeRegister from "./HomeRegister";
 import {Row} from "react-bootstrap";
-import {Link} from "react-router-dom";
 import {Link as LinkScroll} from "react-scroll";
 
 const HomeHeaderNav = () => {

@@ -8,3 +8,23 @@
   overflow: hidden;
   background-repeat: no-repeat;
 }
+
+.has-error {
+  border-bottom: 2px solid red;
+}
+
+.formMsg {
+  color: #3C3C3C;
+  font-size: 12px;
+  padding: 5px 0 0 10px;
+}
+
+.invalid {
+  color: red;
+}
+
+.valid {
+  color: green;
+}
+
+

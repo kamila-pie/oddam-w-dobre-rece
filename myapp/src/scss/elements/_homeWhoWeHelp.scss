@@ -36,3 +36,11 @@
 .HelpThings {
   text-align: right;
 }
+
+.pagination {
+  justify-content: center;
+  .page-link {
+    cursor: pointer;
+  }
+
+}

@@ -1,125 +1,126 @@
 {
+  "foundations": {
+    "title": "W naszej bazie znajdziesz listę zweryfikowanych Fundacji, z którymi współpracujemy. Możesz sprawdzić czym się zajmują, komu pomagają i czego potrzebują.",
+    "organisations": [
+      {
+      "id": 1,
+      "name": "Fundacja “Dbam o Zdrowie” ",
+      "desc": "Cel i misja: Pomoc osobom znajdującym się w trudnej sytuacji życiowej.",
+      "needs": "ubrania, jedzenie, sprzęt AGD, meble, zabawki"
+      },
+      {
+      "id": 2,
+      "name": "Fundacja “Dla dzieci” ",
+      "desc": "Cel i misja: Pomoc dzieciom z ubogich rodzin.",
+      "needs": "ubrania, meble, zabawki"
+      },
+      {
+      "id": 3,
+      "name": "Fundacja “Bez domu” ",
+      "desc": "Cel i misja: Pomoc dla osób nie posiadających miejsca zamieszkania.",
+      "needs": "ubrania, jedzenie, ciepłe koce"
+      },
+      {
+      "id": 4,
+      "name": "Fundacja “Dbam o Zdrowie 2” ",
+      "desc": "Cel i misja: Pomoc osobom znajdującym się w trudnej sytuacji życiowej.",
+      "needs": "ubrania, jedzenie, sprzęt AGD, meble, zabawki"
+      },
+      {
+      "id": 5,
+      "name": "Fundacja “Dla dzieci 2” ",
+      "desc": "Cel i misja: Pomoc dzieciom z ubogich rodzin.",
+      "needs": "ubrania, meble, zabawki"
+      },
+      {
+      "id": 6,
+      "name": "Fundacja “Bez domu 2” ",
+      "desc": "Cel i misja: Pomoc dla osób nie posiadających miejsca zamieszkania.",
+      "needs": "ubrania, jedzenie, ciepłe koce"
+      },
+      {
+      "id": 7,
+      "name": "Fundacja “Dbam o Zdrowie 3” ",
+      "desc": "Cel i misja: Pomoc osobom znajdującym się w trudnej sytuacji życiowej.",
+      "needs": "ubrania, jedzenie, sprzęt AGD, meble, zabawki"
+      },
+      {
+      "id": 8,
+      "name": "Fundacja “Dla dzieci 3” ",
+      "desc": "Cel i misja: Pomoc dzieciom z ubogich rodzin.",
+      "needs": "ubrania, meble, zabawki"
+      },
+      {
+      "id": 9,
+      "name": "Fundacja “Bez domu 4” ",
+      "desc": "Cel i misja: Pomoc dla osób nie posiadających miejsca zamieszkania.",
+      "needs": "ubrania, jedzenie, ciepłe koce"
+      }
+    ]
+  },
   "organisations": {
-    "fundations": [
+    "title": "W naszej bazie znajdziesz listę zweryfikowanych Organizacji, z którymi współpracujemy. Możesz sprawdzić czym się zajmują, komu pomagają i czego potrzebują.",
+    "organisations": [
       {
-        "id": 1,
-        "title": "W naszej bazie znajdziesz listę zweryfikowanych Fundacji, z którymi współpracujemy. Możesz sprawdzić czym się zajmują, komu pomagają i czego potrzebują.",
-        "name": "Fundacja “Dbam o Zdrowie” ",
-        "desc": "Cel i misja: Pomoc osobom znajdującym się w trudnej sytuacji życiowej.",
-        "needs": "ubrania, jedzenie, sprzęt AGD, meble, zabawki"
+      "id": 1,
+      "name": "Organizacja “Lorem Ipsum 1” ",
+      "desc": "Quis varius quam quisque id diam vel quam elementum pulvinar.",
+      "needs": "Egestas, sed, tempus"
       },
       {
-        "id": 1,
-        "name": "Fundacja “Dla dzieci” ",
-        "desc": "Cel i misja: Pomoc dzieciom z ubogich rodzin.",
-        "needs": "ubrania, meble, zabawki"
+      "id": 2,
+      "name": "Organizacja “Lorem Ipsum 2” ",
+      "desc": "Cel i misja: Pomoc dzieciom z ubogich rodzin.",
+      "needs": "Ut, aliquam, purus, sit, amet"
       },
       {
-        "id": 1,
-        "name": "Fundacja “Bez domu” ",
-        "desc": "Cel i misja: Pomoc dla osób nie posiadających miejsca zamieszkania.",
-        "needs": "ubrania, jedzenie, ciepłe koce"
+      "id": 3,
+      "name": "Organizacja “Lorem Ipsum 3” ",
+      "desc": "Cel i misja: Pomoc dla osób nie posiadających miejsca zamieszkania.",
+      "needs": "Mi, quis, hendrerit, dolor"
       },
       {
-        "id": 1,
-        "name": "Fundacja “Dbam o Zdrowie” ",
-        "desc": "Cel i misja: Pomoc osobom znajdującym się w trudnej sytuacji życiowej.",
-        "needs": "ubrania, jedzenie, sprzęt AGD, meble, zabawki"
+      "id": 4,
+      "name": "Organizacja “Lorem Ipsum 4” ",
+      "desc": "Cel i misja: Pomoc osobom znajdującym się w trudnej sytuacji życiowej.",
+      "needs": "ubrania, jedzenie, sprzęt AGD, meble, zabawki"
       },
       {
-        "id": 1,
-        "name": "Fundacja “Dla dzieci” ",
-        "desc": "Cel i misja: Pomoc dzieciom z ubogich rodzin.",
-        "needs": "ubrania, meble, zabawki"
+      "id": 5,
+      "name": "Organizacja “Lorem Ipsum 5” ",
+      "desc": "Cel i misja: Pomoc dzieciom z ubogich rodzin.",
+      "needs": "ubrania, meble, zabawki"
       },
       {
-        "id": 1,
-        "name": "Fundacja “Bez domu” ",
-        "desc": "Cel i misja: Pomoc dla osób nie posiadających miejsca zamieszkania.",
-        "needs": "ubrania, jedzenie, ciepłe koce"
-      },
-      {
-        "id": 1,
-        "name": "Fundacja “Dbam o Zdrowie” ",
-        "desc": "Cel i misja: Pomoc osobom znajdującym się w trudnej sytuacji życiowej.",
-        "needs": "ubrania, jedzenie, sprzęt AGD, meble, zabawki"
-      },
-      {
-        "id": 1,
-        "name": "Fundacja “Dla dzieci” ",
-        "desc": "Cel i misja: Pomoc dzieciom z ubogich rodzin.",
-        "needs": "ubrania, meble, zabawki"
-      },
-      {
-        "id": 1,
-        "name": "Fundacja “Bez domu” ",
-        "desc": "Cel i misja: Pomoc dla osób nie posiadających miejsca zamieszkania.",
-        "needs": "ubrania, jedzenie, ciepłe koce"
+      "id": 6,
+      "name": "Organizacja “Lorem Ipsum 6” ",
+      "desc": "Cel i misja: Pomoc dla osób nie posiadających miejsca zamieszkania.",
+      "needs": "ubrania, jedzenie, ciepłe koce"
       }
-    ],
-    "organiz": [
+    ]
+  },
+  "local": {
+    "title": "W naszej bazie znajdziesz listę zweryfikowanych organizowanych Lokalnych zbiórek, z którymi współpracujemy. Możesz sprawdzić czym się zajmują, komu pomagają i czego potrzebują.",
+    "organisations": [
       {
-        "title": "W naszej bazie znajdziesz listę zweryfikowanych Organizacji, z którymi współpracujemy. Możesz sprawdzić czym się zajmują, komu pomagają i czego potrzebują."
+      "id": 1,
+      "name": "Zbiórka “Pomoc dla Powodzian” ",
+      "desc": "Cel i misja: Pomoc osobom znajdującym się w trudnej sytuacji życiowej.",
+      "needs": "ubrania, jedzenie, sprzęt AGD, meble, zabawki"
       },
       {
-        "id": 2,
-        "name": "Organizacja “Lorem Ipsum 1” ",
-        "desc": "Quis varius quam quisque id diam vel quam elementum pulvinar.",
-        "needs": "Egestas, sed, tempus"
+      "id": 2,
+      "name": "Zbiórka dla Powstańców “Pomagamy Bohaterom” ",
+      "desc": "Cel i misja: Pomoc Weteranom Powstania Warszawskiego.",
+      "needs": "ubrania, meble, jedzenie"
       },
       {
-        "id": 2,
-        "name": "Organizacja “Lorem Ipsum 2” ",
-        "desc": "Cel i misja: Pomoc dzieciom z ubogich rodzin.",
-        "needs": "Ut, aliquam, purus, sit, amet"
-      },
-      {
-        "id": 2,
-        "name": "Organizacja “Lorem Ipsum 3” ",
-        "desc": "Cel i misja: Pomoc dla osób nie posiadających miejsca zamieszkania.",
-        "needs": "Mi, quis, hendrerit, dolor"
-      },
-      {
-        "id": 2,
-        "name": "Organizacja “Lorem Ipsum 4” ",
-        "desc": "Cel i misja: Pomoc osobom znajdującym się w trudnej sytuacji życiowej.",
-        "needs": "ubrania, jedzenie, sprzęt AGD, meble, zabawki"
-      },
-      {
-        "id": 2,
-        "name": "Organizacja “Lorem Ipsum 5” ",
-        "desc": "Cel i misja: Pomoc dzieciom z ubogich rodzin.",
-        "needs": "ubrania, meble, zabawki"
-      },
-      {
-        "id": 2,
-        "name": "Organizacja “Lorem Ipsum 6” ",
-        "desc": "Cel i misja: Pomoc dla osób nie posiadających miejsca zamieszkania.",
-        "needs": "ubrania, jedzenie, ciepłe koce"
-      }
-    ],
-    "local": [
-      {
-        "title": "W naszej bazie znajdziesz listę zweryfikowanych organizowanych Lokalnych zbiórek, z którymi współpracujemy. Możesz sprawdzić czym się zajmują, komu pomagają i czego potrzebują."
-      },
-      {
-        "id": 3,
-        "name": "Zbiórka “Pomoc dla Powodzian” ",
-        "desc": "Cel i misja: Pomoc osobom znajdującym się w trudnej sytuacji życiowej.",
-        "needs": "ubrania, jedzenie, sprzęt AGD, meble, zabawki"
-      },
-      {
-        "id": 3,
-        "name": "Zbiórka dla Powstańców “Pomagamy Bohaterom” ",
-        "desc": "Cel i misja: Pomoc Weteranom Powstania Warszawskiego.",
-        "needs": "ubrania, meble, jedzenie"
-      },
-      {
-        "id": 3,
-        "name": "Zbiórka “Świąteczna paka dla zwierzaka” ",
-        "desc": "Cel i misja: wielka zbiórka potrzebnych rzeczy dla bezdomnych psów i kotów żyjących w schroniskach.",
-        "needs": "karma, opatrunki, ciepłe koce"
+      "id": 3,
+      "name": "Zbiórka “Świąteczna paka dla zwierzaka” ",
+      "desc": "Cel i misja: wielka zbiórka potrzebnych rzeczy dla bezdomnych psów i kotów żyjących w schroniskach.",
+      "needs": "karma, opatrunki, ciepłe koce"
       }
     ]
   }
 }
+

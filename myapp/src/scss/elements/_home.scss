@@ -28,22 +28,32 @@
 .btnWrapper {
   display: flex;
   justify-content: space-between;
+  gap: 2em;
+  flex-basis: 310px;
+  flex-grow: 1;
 }
 
 .arrowIconWrapper{
   margin: 0 auto;
   position: absolute;
   bottom: 0;
-  left: 50%;
+  right: 0;
   cursor: pointer;
-  img {
+  color: $color-secondary;
+  img:hover {
     animation: scrollTop 0.5s alternate ease infinite;
   }
 }
 .arrowIconWrapperToTop {
-  margin: 0 auto;
+  position: relative;
+  bottom: 0;
+  right: 0;
   cursor: pointer;
+
   img {
+    color: $color-secondary;
+  }
+  &:hover {
     animation: scrollTop 0.5s alternate ease infinite;
   }
 }

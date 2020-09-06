@@ -1,30 +1,29 @@
 import React, {useState} from 'react';
 import {Form, Row} from "react-bootstrap";
-
 import {Formik} from "formik";
 import * as Yup from "yup";
 import Error from "./HomeContactError";
-
+import axios from "axios";
+import LoadigSpinner from "../elements/LoadingSpinner";
 
 const validationSchema = Yup.object().shape({
     name: Yup.string()
         .min(2, "Imię musi zawierać min. 2 znaki")
         .max(15, "Imię może zawierać max. 25 znaków")
-        .required("Musisz podać swoję imię")
+        .required("Podane imię jest nieprawidłowe!")
         .matches(/^[a-zA-Z]*$/, "Podaj tylko swoje imię"),
     email: Yup.string()
-        .email("Podaj prawidłowy adres e-mail.")
+        .email("Podany email jest nieprawidołowy!")
         .max(45, "Max. 45 znaków")
         .required("Musisz podać swój e-mail."),
     msg: Yup.string()
-        .min(50, "Min. 50 znaków.")
+        .min(50, "Wiadomość musi mieć conajmniej 50 znaków!")
         .matches(/[^$|\s+]/, "No white spaces")
-        .required("Musisz podać swoją wiadomość. Min. 120 znaków."),
+        .required("Musisz podać swoją wiadomość. Min. 50 znaków."),
 });
 
 const HomeContact = () => {
-
-    // const [isSuccess, setIsSuccess] = useState(false);
+    const [isSuccess, setIsSuccess] = useState(false);
 
     return (
         <Formik
@@ -34,7 +33,18 @@ const HomeContact = () => {
                 setSubmitting(true);
 
                 setTimeout(() => {
-                    alert(JSON.stringify(values, null, 2));
+                    // alert(JSON.stringify(values, null, 2));
+                    axios.post(`https://fer-api.coderslab.pl/v1/portfolio/contact`, values, {
+                            headers: {
+                                "Content-Type": "application/json",
+                            },
+                        })
+                        .then(setIsSuccess(true))
+                        .then(
+                            setTimeout(() => {
+                                setIsSuccess(false);
+                            }, 5000)
+                        );
                     resetForm();
                     setSubmitting(false);
                 }, 500);
@@ -50,6 +60,13 @@ const HomeContact = () => {
                   isSubmitting
               }) => (
                 <Form onSubmit={handleSubmit}>
+                    {isSuccess && (
+                        <Row>
+                            <p>Wiadomość została wysłana!</p>
+                            <p>Wkrótce się skontaktujemy.</p>
+                        </Row>
+                    )}
+                    {isSubmitting && <LoadigSpinner/>}
                     <Row>
                         {/*{JSON.stringify(values)}*/}
                         <Form.Group controlId="formName">

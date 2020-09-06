@@ -1,18 +1,12 @@
 import React from 'react';
-import HomeLogin from "./HomeLogin";
-import HomeRegister from "./HomeRegister";
 import {Row} from "react-bootstrap";
 import {Link as LinkScroll} from "react-scroll";
+import HomeHeaderAuth from "./HomeHeaderAuth";
 
 const HomeHeaderNav = () => {
     return (
         <header className={'topMenu'}>
-            <Row className={'navLinkContainer'}>
-                <ul className={'navList navListAuth'}>
-                    <HomeLogin/>
-                    <HomeRegister/>
-                </ul>
-            </Row>
+            <HomeHeaderAuth/>
             <Row className={'navLinkContainer'}>
                 <ul className={'navList'}>
                     <li className={'navEl'}>

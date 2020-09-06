@@ -1,0 +1,54 @@
+.loginSection {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
+  height: 100vh;
+}
+
+.loginForm {
+  flex-basis: calc(calc(385px - 100vw) * 999);
+  flex-grow: 1;
+}
+.loginFormGroup {
+  background-color: $color-primary;
+  padding: 40px 65px;
+  margin-bottom: 40px;
+}
+
+.formInput {
+  border-bottom: 1px solid $color-secondary;
+  background-color: transparent;
+  margin-top: 5px;
+}
+
+.btnAuth {
+  width: 115px;
+  font-weight: 300;
+  cursor: pointer;
+  flex-grow: 1;
+  background-color: transparent;
+  border: none;
+  padding: 13px 15px;
+  &:active {
+    background-color: $color-accent;
+    border: 1px solid $color-secondary;
+  }
+}
+.btnOption {
+  &:hover {
+    border: 1px solid $color-accent;
+  }
+}
+
+.btnAction {
+  border: 1px solid $color-secondary;
+  &:hover {
+    border: 1px solid $color-accent;
+  }
+}
+
+
+

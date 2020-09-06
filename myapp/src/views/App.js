@@ -6,6 +6,7 @@ import HomeLogin from "../components/HomeMain/HomeLogin";
 import HomeRegister from "../components/HomeMain/HomeRegister";
 import {Logout} from "./Logout";
 import Login from "./Login";
+import Register from "./Register";
 
 
 const App = () => {
@@ -15,7 +16,7 @@ const App = () => {
               <Route exact path={'/'} component={Home}/>
               <Route path={'/logowanie'} component={Login}/>
               <Route path="/oddaj-rzeczy" component={Form} />
-              <Route path={'/rejestracja'} component={HomeRegister}/>
+              <Route path={'/rejestracja'} component={Register}/>
               <Route path="/wylogowano" component={Logout}/>
             </Switch>
       </BrowserRouter>

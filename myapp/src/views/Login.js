@@ -1,6 +1,6 @@
 import React from "react";
 import TitleDecor from "../components/elements/TitleDecor";
-import {Button, Container, Form, FormGroup, Row} from "react-bootstrap";
+import {Container, Form, FormGroup, Row} from "react-bootstrap";
 
 export const Login = () => {
     return (

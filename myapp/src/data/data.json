@@ -22,39 +22,39 @@
       },
       {
       "id": 4,
-      "name": "Fundacja “Dbam o Zdrowie 2” ",
+      "name": "Fundacja “Pomagamy” ",
       "desc": "Cel i misja: Pomoc osobom znajdującym się w trudnej sytuacji życiowej.",
       "needs": "ubrania, jedzenie, sprzęt AGD, meble, zabawki"
       },
       {
       "id": 5,
-      "name": "Fundacja “Dla dzieci 2” ",
-      "desc": "Cel i misja: Pomoc dzieciom z ubogich rodzin.",
-      "needs": "ubrania, meble, zabawki"
+      "name": "Fundacja “Pomóż Dzieciom” ",
+      "desc": "Cel i misja: Pomoc ooważnie chormym dzieciom i ich rodzinom",
+      "needs": "ubrania, meble, zabawki, hospitalizacja"
       },
       {
       "id": 6,
-      "name": "Fundacja “Bez domu 2” ",
-      "desc": "Cel i misja: Pomoc dla osób nie posiadających miejsca zamieszkania.",
+      "name": "Fundacja “Zdążyć z Pomocą” ",
+      "desc": "Cel i misja: Spraw, aby dzieci z Syrii przetrwały zimę. Dołącz do akcji ratunkowej UNICEF.",
       "needs": "ubrania, jedzenie, ciepłe koce"
       },
       {
       "id": 7,
-      "name": "Fundacja “Dbam o Zdrowie 3” ",
+      "name": "Fundacja “Dbam o Zdrowie” ",
       "desc": "Cel i misja: Pomoc osobom znajdującym się w trudnej sytuacji życiowej.",
       "needs": "ubrania, jedzenie, sprzęt AGD, meble, zabawki"
       },
       {
       "id": 8,
-      "name": "Fundacja “Dla dzieci 3” ",
+      "name": "Fundacja “Kubuś” ",
       "desc": "Cel i misja: Pomoc dzieciom z ubogich rodzin.",
       "needs": "ubrania, meble, zabawki"
       },
       {
       "id": 9,
-      "name": "Fundacja “Bez domu 4” ",
+      "name": "Fundacja “Kawałek Nieba” ",
       "desc": "Cel i misja: Pomoc dla osób nie posiadających miejsca zamieszkania.",
-      "needs": "ubrania, jedzenie, ciepłe koce"
+      "needs": "leki, leczenie i operacje medyczne, rehabilitacje, sprzęt medyczny"
       }
     ]
   },

@@ -22,9 +22,7 @@ const Login = ({history}) => {
                 console.log("Błędny email lub hasło");
                 alert(error);
             }
-        },
-        [history]
-    );
+        },[history]);
 
     const {currentUser} = useContext(AuthContext);
 

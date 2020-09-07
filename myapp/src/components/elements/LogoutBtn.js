@@ -1,15 +1,16 @@
-import React, {useContext} from 'react';
-import {Redirect} from "react-router-dom";
-import {AuthContext} from "../../config/AuthContext";
+import React from 'react';
+import {NavLink} from "react-router-dom";
 import app from "../../config/firebase";
 
 const LogoutBtn = () => {
-    const {currentUser} = useContext(AuthContext);
-
-    if (currentUser) { return <Redirect to={'/wylogowano'}/> }
+    // const {currentUser} = useContext(AuthContext);
+    //
+    // if (!currentUser) { return <Redirect to={'/wylogowano'}/> }
     return (
         <>
-            <button onClick={() => app.auth().signOut()}>Logout</button>
+            <button onClick={() => app.auth().signOut()}>
+                <NavLink to={'/wylogowano'}> Logout </NavLink>
+            </button>
         </>
     )
 }

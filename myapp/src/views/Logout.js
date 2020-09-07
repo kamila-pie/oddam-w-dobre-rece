@@ -1,8 +1,6 @@
 import React from "react";
 import {Link} from "react-router-dom";
 import TitleDecor from "../components/elements/TitleDecor";
-import {Container, Form, FormGroup, Row} from "react-bootstrap";
-import app from "../config/firebase";
 
 export const Logout = () => {
     return (

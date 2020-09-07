@@ -15,7 +15,6 @@ const Pagination = ({ postsPerPage, totalPosts, paginate, currentPage }) => {
                     <Row
                         className='page-link'
                         key={number}
-                        // active={number === currentPage}
                         onClick={() => paginate(number)}>
                         {number}
                     </Row>

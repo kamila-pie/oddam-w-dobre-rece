@@ -10,7 +10,7 @@ const HomeLoggedIn = () => {
     return (
         <>
             <h1>HomeLoggedIn</h1>
-            <button onClick={() => app.auth().signOut()}><Link to={'/'}>Wylogowano</Link></button>
+            <button><Link to={'/'}>Wylogowano</Link></button>
         </>
     )
 }

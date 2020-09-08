@@ -1,16 +1,13 @@
-import React, {useCallback, useContext} from "react";
+import React, { useContext, useCallback } from "react";
 import {withRouter, Redirect} from "react-router-dom";
-import app from "../config/firebase";
 import {AuthContext} from "../config/AuthContext";
-
+import {Link} from "react-router-dom";
 import {Container, Form, FormGroup, Row} from "react-bootstrap";
 import TitleDecor from "../components/elements/TitleDecor";
-import {Link} from "react-router-dom";
-
-import {ErrorMessage, Formik} from "formik";
+import {Formik} from "formik";
 import * as Yup from "yup";
-import Error from "../components/HomeContact/HomeContactError";
-
+import Error from "../components/elements/Error";
+import app from "../config/firebase";
 
 const validationLoginSchema = Yup.object().shape({
     email: Yup.string()
@@ -19,14 +16,9 @@ const validationLoginSchema = Yup.object().shape({
     password: Yup.string()
         .min(6, "Podane hasło jest za krótkie. Musi wawierać min 6 znaków.")
         .required("Podane hasło jest nieprawidłowe!"),
-    msg: Yup.string()
-        .min(50, "Wiadomość musi mieć conajmniej 50 znaków!")
-        .matches(/[^$|\s+]/, "No white spaces")
-        .required("Musisz podać swoją wiadomość. Min. 50 znaków."),
 });
 
 const Login = ({history}) => {
-
     const handleLogin = useCallback(
         async e => {
             e.preventDefault();
@@ -43,49 +35,68 @@ const Login = ({history}) => {
             }
         },[history]);
 
-    const {currentUser} = useContext(AuthContext);
+    const {currentUser, login} = useContext(AuthContext);
 
-    if (currentUser) { return <Redirect to={'/'}/> }
+    if (currentUser) {
+        return <Redirect to={'/'}/>
+    }
 
     return (
         <section className={'loginSection'}>
             <TitleDecor text={'Zaloguj się'}/>
             <Formik
-                initialValues={{email: "", password: "", msg: ""}}
+                initialValues={{email: "", password: ""}}
                 validationSchema={validationLoginSchema}
-                onSubmit={(values, {setSubmitting}) => {
-                    console.log(values);
-                }}
             >
-                {({isSubmitting, isValid, touched, errors}) => (
-                    <Form className={'loginForm'} onSubmit={handleLogin}>
+                {({values, errors, touched, handleChange, handleBlur}) => (
+                    <Form className={'loginForm'}
+                          onSubmit={handleLogin}
+                    >
                         <Container className={'loginFormGroup'}>
                             <FormGroup>
                                 <Form.Label>Email</Form.Label>
                                 <Form.Control
                                     // className={'formInput'}
-                                    className={touched.email && errors.email ? "has-error" : null}
+                                    className={touched.email && errors.email ? "formInput has-error" : null}
                                     type={'email'}
                                     name={'email'}
                                     id={'email'}
-                                    required/>
-                                <ErrorMessage name={'email'}/>
+                                    required
+                                    value={values.email}
+                                    onChange={handleChange}
+                                    onBlur={handleBlur}
+                                    error={touched.email && errors.email}
+                                />
                                 <Error touched={touched.email} message={errors.email}/>
                             </FormGroup>
                             <FormGroup>
                                 <Form.Label>Hasło</Form.Label>
                                 <Form.Control
-                                    className={'formInput'}
+                                    className={'formInput has-error'}
+                                    // className={touched.email && errors.email ? "formInput has-error" : null}
                                     type={'password'}
                                     name={'password'}
                                     id={'password'}
-                                    required/>
-                                <ErrorMessage name={'password'}/>
+                                    required
+                                    value={values.password}
+                                    onChange={handleChange}
+                                    onBlur={handleBlur}
+                                    error={touched.password && errors.password}
+                                />
+                                <Error touched={touched.password} message={errors.password}/>
                             </FormGroup>
                         </Container>
                         <Row>
-                            <button className={'btnAuth btnOption'}><Link to={'/rejestracja'}>Załóż konto</Link></button>
-                            <button className={'btnAuth btnAction'} type={'submit'}>Zaloguj się</button>
+                            <button className={'btnAuth btnOption'}>
+                                <Link to={'/rejestracja'}>Załóż konto</Link>
+                            </button>
+                            <button
+                                className={'btnAuth btnAction'}
+                                type={'submit'}
+                                onClick={login}
+                            >
+                                <Link to={currentUser ? '/' : '/logowanie'}>Zaloguj się</Link>
+                            </button>
                         </Row>
                     </Form>
                 )}

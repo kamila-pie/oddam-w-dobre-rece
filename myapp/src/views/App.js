@@ -7,6 +7,7 @@ import Login from "./Login";
 import Register from "./Register";
 import {AuthProvider} from "../config/AuthContext";
 import PrivateRoute from "../config/PrivateRoute";
+import HomeLoggedIn from "./Home LoggedIn";
 
 const App = () => {
     return (
@@ -18,6 +19,7 @@ const App = () => {
                     <Route path={'/rejestracja'} component={Register}/>
                     <Route path={'/wylogowano'} component={Logout}/>
                     <PrivateRoute path="/oddaj-rzeczy" component={Form}/>
+                    <PrivateRoute path={'/zalogowano'} component={HomeLoggedIn}/>
                 </Switch>
             </BrowserRouter>
         </AuthProvider>

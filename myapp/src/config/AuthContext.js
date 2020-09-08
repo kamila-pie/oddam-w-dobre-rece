@@ -1,11 +1,24 @@
 import React, { useEffect, useState } from "react";
 import app from "./firebase";
+import LoadigSpinner from "../components/elements/LoadingSpinner";
 
 export const AuthContext = React.createContext();
 
 export const AuthProvider = ({ children }) => {
     const [currentUser, setCurrentUser] = useState(null);
     const [pending, setPending] = useState(true);
+
+    const login = (email, password) => {
+        return app.auth().signInWithEmailAndPassword(email, password)
+    }
+
+    const logout = () => {
+        return app.auth().signOut()
+    }
+
+    const register = (email, password) => {
+        app.auth().createUserWithEmailAndPassword(email, password)
+    }
 
     useEffect(() => {
         app.auth().onAuthStateChanged((user) => {
@@ -15,15 +28,11 @@ export const AuthProvider = ({ children }) => {
     }, []);
 
     if(pending){
-        return <>Loading...</>
+        return <LoadigSpinner/>
     }
 
     return (
-        <AuthContext.Provider
-            value={{
-                currentUser
-            }}
-        >
+        <AuthContext.Provider value={{ currentUser, login, logout, register }}>
             {children}
         </AuthContext.Provider>
     );

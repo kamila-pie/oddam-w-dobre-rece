@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import {Form, Row} from "react-bootstrap";
 import {Formik} from "formik";
 import * as Yup from "yup";
-import Error from "./HomeContactError";
+import Error from "../elements/Error";
 import axios from "axios";
 import LoadigSpinner from "../elements/LoadingSpinner";
 

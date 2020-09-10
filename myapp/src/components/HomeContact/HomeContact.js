@@ -16,10 +16,10 @@ const validationSchema = Yup.object().shape({
         .email("Podany email jest nieprawidołowy!")
         .max(45, "Max. 45 znaków")
         .required("Musisz podać swój e-mail."),
-    msg: Yup.string()
-        .min(50, "Wiadomość musi mieć conajmniej 50 znaków!")
+    message: Yup.string()
+        .min(120, "Wiadomość musi mieć conajmniej 120 znaków!")
         .matches(/[^$|\s+]/, "No white spaces")
-        .required("Musisz podać swoją wiadomość. Min. 50 znaków."),
+        .required("Musisz podać swoją wiadomość. Min. 120 znaków."),
 });
 
 const HomeContact = () => {
@@ -27,7 +27,7 @@ const HomeContact = () => {
 
     return (
         <Formik
-            initialValues={{name: "", email: "", msg: ""}}
+            initialValues={{name: "", email: "", message: ""}}
             validationSchema={validationSchema}
             onSubmit={(values, {setSubmitting, resetForm}) => {
                 setSubmitting(true);
@@ -35,16 +35,19 @@ const HomeContact = () => {
                 setTimeout(() => {
                     // alert(JSON.stringify(values, null, 2));
                     axios.post(`https://fer-api.coderslab.pl/v1/portfolio/contact`, values, {
-                            headers: {
-                                "Content-Type": "application/json",
-                            },
-                        })
+                        headers: {
+                            "Content-Type": "application/json",
+                        },
+                    })
                         .then(setIsSuccess(true))
                         .then(
                             setTimeout(() => {
                                 setIsSuccess(false);
                             }, 5000)
-                        );
+                        )
+                        .catch(error => {
+                            console.log(error);
+                        });
                     resetForm();
                     setSubmitting(false);
                 }, 500);
@@ -106,13 +109,13 @@ const HomeContact = () => {
                             type={'text'}
                             as="textarea"
                             rows="3"
-                            name={'msg'}
+                            name={'message'}
                             onChange={handleChange}
                             onBlur={handleBlur}
-                            value={values.msg}
-                            className={touched.msg && errors.msg ? "has-error" : null}
+                            value={values.message}
+                            className={touched.message && errors.message ? "has-error" : null}
                         />
-                        <Error touched={touched.msg} message={errors.msg}/>
+                        <Error touched={touched.message} message={errors.message}/>
                     </Form.Group>
                     <button className={'btn'} variant="primary" type="submit" disabled={isSubmitting}>
                         Wyślij

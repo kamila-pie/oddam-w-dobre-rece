@@ -1,7 +1,6 @@
 import * as firebase from 'firebase/app';
 import 'firebase/auth';
 
-
 const app = firebase.initializeApp({
     apiKey: "AIzaSyAkg6vn7Gnz88NLwPvebc4IUC2R2CaZBJU",
     authDomain: "oddam-w-dobre-rece-react.firebaseapp.com",
@@ -19,6 +18,9 @@ const app = firebase.initializeApp({
     // appId: process.env.REACT_APP_FIREBASE_APP_ID
 });
 
+const db = app.firestore;
+
+export { db };
 export default app;
 
 // const firebaseConfig = {

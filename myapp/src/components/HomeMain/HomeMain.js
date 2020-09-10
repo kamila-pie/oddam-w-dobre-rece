@@ -9,9 +9,8 @@ const HomeMain = () => {
     return (
         <section className={'homeSection'} id={'main'}>
             <div className={'homeMainWrapper'}>
-                <div className={'homeBg'}/>
+                <HomeHeaderNav/>
                 <div className={'homeMain'}>
-                    <HomeHeaderNav/>
                     <TitleDecor text={'Zacznij pomagać! Oddaj niechciane rzeczy w zaufane ręce'} />
                     <div className={'btnWrapper'}>
                         <Button text={'ODDAJ RZECZY'}/>

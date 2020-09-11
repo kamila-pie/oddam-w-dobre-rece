@@ -93,7 +93,7 @@
 
 .homeThreeColLaptop {
   margin: 0;
-  padding-top: 155px;
+  padding-top: 40px;
   //flex-basis: 1300px;
   flex-basis: calc(calc(35em - 100vw) * 999);
   flex-grow: 1;
@@ -112,10 +112,11 @@
 .homeThreeCol {
   background-image: url("../../assets/3 Columns Background.png");
   background-size: cover;
-  height: 100vh;
+  height: 50vh;
   //height: 384px;
   text-align: center;
   @media (max-width: 768px) {
+    height: 100vh;
     //background-size: 520px;
   }
   @media (max-width: 320px) {
@@ -152,20 +153,32 @@
   display: flex;
   flex-direction: column;
   align-content: space-around;
-  padding: 50px 0;
+  padding: 0 0 50px ;
+  .StepsBtn {
+    display: flex;
+    justify-content: center;
+  }
+  @media (max-width: 320px) {
+    height: fit-content;
+  }
 }
 
 .stepsRowIcons {
   background-color: $color-primary;
-  height: 325px;
   align-items: center;
-  margin: 40px 0;
+  margin: 0 0 10px;
+  flex-basis: calc(calc(35em - 100vw) * 999);
+  flex-grow: 1;
+  @media (max-width: 555px) {
+    padding: 20px 0 20px;
+  }
 
   .col {
     display: flex;
     flex-direction: column;
     align-items: center;
     position: relative;
+    text-align: center;
 
     img {
       padding-bottom: 10px;
@@ -173,14 +186,15 @@
 
     h3 {
       margin-bottom: 21px;
+      position: relative;
 
       &::after {
         content: "";
         position: absolute;
         height: 2px;
         background: $color-secondary;
-        top: 77%;
-        width: 18%;
+        top: 140%;
+        width: 70px;
         left: 50%;
         transform: translateX(-50%);
       }

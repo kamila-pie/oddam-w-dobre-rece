@@ -33,7 +33,11 @@ const HomeSteps = () => {
                     <p>kurier przyjedzie w dogodnym terminie</p>
                 </Col>
             </Row>
-            <Button text={'ODDAJ RZECZY'}/>
+            <Row>
+                <Col className={'StepsBtn'}>
+                    <Button text={'ODDAJ RZECZY'}/>
+                </Col>
+            </Row>
         </section>
     )
 }

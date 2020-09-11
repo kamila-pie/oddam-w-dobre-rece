@@ -16,23 +16,45 @@
   &::after {
     content: "";
     background-image: url("../../assets/Home-Hero-Image.jpg");
-    opacity: 0.5;
     top: 0;
-    left: -90%;
+    left: -30%;
     bottom: 0;
     right: 0;
+    opacity: 1;
     position: absolute;
     z-index: -1;
-    background-size: cover;
+    background-size: contain;
     overflow: hidden;
+    height: 100vh;
     background-repeat: no-repeat;
+    @media (max-width: 400px) {
+      background-image: none;
+    }
+    @media (max-width: 700px) {
+      opacity: 0.3;
+      left: -30%;
+    }
+    @media (max-width: 750px) {
+      opacity: 0.3;
+      left: -20;
+    }
+    @media (max-width: 880px) {
+      left: -40;
+    }
+
   }
 }
 
 .homeMain {
   display: flex;
   flex-direction: column;
+  height: 80vh;
   text-align: center;
+  @media (min-width: 750px) {
+    align-self: flex-end;
+    margin: 0 56px 15px 414px;
+    text-align: center;
+  }
 }
 
 .arrowIconWrapper{

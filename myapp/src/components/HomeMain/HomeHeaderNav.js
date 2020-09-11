@@ -1,5 +1,5 @@
 import React from 'react';
-import {Row} from "react-bootstrap";
+import {Nav, Row} from "react-bootstrap";
 import {Link as LinkScroll} from "react-scroll";
 import HomeHeaderAuth from "./HomeHeaderAuth";
 
@@ -7,7 +7,7 @@ const HomeHeaderNav = () => {
     return (
         <header className={'topMenu'}>
             <HomeHeaderAuth/>
-            <Row className={'navLinkContainer'}>
+            <Nav className={'navLinkContainer'}>
                 <ul className={'navList'}>
                     <li className={'navEl'}>
                         <LinkScroll
@@ -60,7 +60,7 @@ const HomeHeaderNav = () => {
                         >Kontakt</LinkScroll>
                     </li>
                 </ul>
-            </Row>
+            </Nav>
         </header>
     )
 }

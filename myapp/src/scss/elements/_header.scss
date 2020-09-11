@@ -8,7 +8,22 @@
 .navList {
   display: flex;
   align-items: center;
+  flex-flow: row nowrap;
   cursor: pointer;
+  @media (max-width: 768px) {
+    flex-flow: column nowrap;
+    background-color: $color-primary;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 300px;
+    padding-top: 3.5rem;
+    & .navEl {
+      align-self: flex-start;
+      margin: 7px 5px;
+    }
+  }
 }
 
 .navEl {
@@ -17,6 +32,7 @@
   align-items: center;
   height: 42px;
   padding: 9px 24px;
+  margin: 0 5px;
   color: $color-secondary;
   &:hover {
     //transition: background-color .5s;

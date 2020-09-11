@@ -11,7 +11,7 @@ const HomeMain = () => {
             <div className={'homeMainWrapper'}>
                 <HomeHeaderNav/>
                 <div className={'homeMain'}>
-                    <TitleDecor text={'Zacznij pomagać! Oddaj niechciane rzeczy w zaufane ręce'} />
+                    <TitleDecor text={'Zacznij pomagać! Oddaj niechciane rzeczy w zaufane ręce'}/>
                     <div className={'btnWrapper'}>
                         <Button text={'ODDAJ RZECZY'}/>
                         <Button text={'ZORGANIZUJ ZBIÓRKĘ'}/>

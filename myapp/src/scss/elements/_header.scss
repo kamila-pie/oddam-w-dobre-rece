@@ -11,6 +11,8 @@
   flex-flow: row nowrap;
   cursor: pointer;
   @media (max-width: 768px) {
+    //display: none;
+    transform: translateX(-100%);
     flex-flow: column nowrap;
     background-color: $color-primary;
     position: fixed;
@@ -19,11 +21,51 @@
     height: 100vh;
     width: 300px;
     padding-top: 3.5rem;
+    z-index: 2;
+    transition: transform 0.3s ease-in-out;
     & .navEl {
       align-self: flex-start;
+      justify-content: end;
       margin: 7px 5px;
+      width: 90%;
+      a {
+        align-self: flex-start;
+      }
     }
   }
+}
+
+
+.burger {
+  width: 2rem;
+  height: 2rem;
+  position: fixed;
+  top: 15px;
+  left: 20px;
+  //display: flex;
+  z-index: 10;
+  display: none;
+  @media (max-width: 768px) {
+    display: flex;
+    justify-content: space-around;
+    flex-flow: column nowrap;
+  }
+  div {
+    width: 2rem;
+    height: 0.25rem;
+    color: #3C3C3C;
+    border-radius: 10px;
+    transform-origin: 1px;
+    transition: all 0.3s linear;
+  }
+}
+
+.navLinkContainer {
+
+}
+
+.navList--open {
+  transform: translateX(0);
 }
 
 .navEl {

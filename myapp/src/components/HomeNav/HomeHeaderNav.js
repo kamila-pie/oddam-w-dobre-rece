@@ -1,16 +1,20 @@
 import React from 'react';
-import {Nav, Row} from "react-bootstrap";
+import {Nav} from "react-bootstrap";
 import {Link as LinkScroll} from "react-scroll";
-import HomeHeaderAuth from "./HomeHeaderAuth";
 
-const HomeHeaderNav = () => {
+const HomeHeaderNav = ({toggleClass, open, setOpen, handleOnClick}) => {
     return (
-        <header className={'topMenu'}>
-            <HomeHeaderAuth/>
             <Nav className={'navLinkContainer'}>
-                <ul className={'navList'}>
-                    <li className={'navEl'}>
+                <ul
+                    className={!open ? "navList" : "navList navList--open"}
+                    onClick={toggleClass}
+                >
+                    <li className={'navEl'}
+                        // onClick={handleOnClick}
+                        // onClick={() => setOpen(!open)}
+                    >
                         <LinkScroll
+                            // onClick={handleOnClick}
                             activeClass="active"
                             to="main"
                             spy={true}
@@ -21,6 +25,7 @@ const HomeHeaderNav = () => {
                     </li>
                     <li className={'navEl'}>
                         <LinkScroll
+                            onClick={handleOnClick}
                             activeClass="active"
                             to="sectionAllAbout"
                             spy={true}
@@ -61,7 +66,6 @@ const HomeHeaderNav = () => {
                     </li>
                 </ul>
             </Nav>
-        </header>
     )
 }
 

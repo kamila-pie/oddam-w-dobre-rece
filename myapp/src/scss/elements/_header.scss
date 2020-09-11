@@ -4,6 +4,9 @@
   flex-direction: column;
   align-items: flex-end;
   margin: 10px 0;
+  @media (max-width: 320px) {
+    height: 45px;
+  }
 }
 .navList {
   display: flex;
@@ -60,10 +63,6 @@
   }
 }
 
-.navLinkContainer {
-
-}
-
 .navList--open {
   transform: translateX(0);
 }
@@ -99,4 +98,12 @@
       border: 1px solid $color-accent;
     }
   }
+}
+
+.fa-home {
+  width: 50px;
+  height: 50px;
+  color: $color-secondary;
+  display: flex;
+  justify-content: flex-end;
 }

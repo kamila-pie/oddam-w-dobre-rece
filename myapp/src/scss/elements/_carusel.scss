@@ -1,0 +1,30 @@
+.homeThreeColMedia {
+  @media (min-width: 768px) {
+    align-self: flex-end;
+    margin: 0 56px 15px 414px;
+    text-align: center;
+  }
+  //@media (max-width: 2560px){
+  //  display: none;
+  //}
+}
+
+
+.carousel{
+  height: 100vh;
+}
+.carousel-caption {
+  position: relative;
+  width: 70%;
+}
+
+.carousel-control-prev, .carousel-control-next {
+  width: 13%;
+}
+
+.carousel-inner {
+  position: absolute;
+  width: 100%;
+  top: 20%;
+  overflow: hidden;
+}

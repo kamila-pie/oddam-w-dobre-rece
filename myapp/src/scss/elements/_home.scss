@@ -13,6 +13,7 @@
   flex-basis: calc(calc(35em - 100vw) * 999);
   flex-grow: 1;
   position: relative;
+
   &::after {
     content: "";
     background-image: url("../../assets/Home-Hero-Image.jpg");
@@ -50,33 +51,37 @@
   flex-direction: column;
   height: 80vh;
   text-align: center;
-  @media (min-width: 750px) {
+  @media (min-width: 760px) {
     align-self: flex-end;
-    margin: 0 56px 15px 414px;
+    margin: 0 39px 0 336px;
     text-align: center;
   }
 }
 
-.arrowIconWrapper{
+.arrowIconWrapper {
   position: absolute;
   z-index: 1;
   bottom: 0;
   right: 0;
   cursor: pointer;
   color: $color-secondary;
+
   img:hover {
     animation: scrollTop 0.5s alternate ease infinite;
   }
 }
+
 .arrowIconWrapperToTop {
   position: relative;
   bottom: 0;
   right: 0;
   cursor: pointer;
+
   &:hover {
     animation: scrollTop 0.5s alternate ease infinite;
   }
 }
+
 @keyframes scrollTop {
   from {
     transform: translateY(2px);
@@ -86,24 +91,58 @@
   }
 }
 
+.homeThreeColLaptop {
+  margin: 0;
+  padding-top: 155px;
+  //flex-basis: 1300px;
+  flex-basis: calc(calc(35em - 100vw) * 999);
+  flex-grow: 1;
+  align-self: flex-end;
+  text-align: center;
+  @media (max-width: 768px) {
+    padding-top: 50px;
+  }
+  @media (max-width: 320px) {
+    margin: 0;
+    padding-top: 0;
+  }
+
+}
+
 .homeThreeCol {
   background-image: url("../../assets/3 Columns Background.png");
-  height: 384px;
+  background-size: cover;
+  height: 100vh;
+  //height: 384px;
   text-align: center;
-  padding: 46px 160px 85px;
+  @media (max-width: 768px) {
+    //background-size: 520px;
+  }
+  @media (max-width: 320px) {
+    margin: 0;
+    padding-top: 0;
+    height: 100vh;
+  }
 
   h2 {
-    font-size: 90px;
+    font-size: 3.5rem;
     color: $color-accent-dark;
     font-weight: 300;
-    padding-bottom: 20px;
+    padding-bottom: 0.7rem;
+    @media (max-width: 320px) {
+      padding-bottom: 0;
+    }
+
   }
 
   h3 {
-    margin: 10px 28px;
+    font-size: 1rem;
+    margin: 0 28px 10px;
   }
 
   p {
+    font-size: 0.7rem;
+    line-height: 1rem;
     font-family: $font-alt;
   }
 }

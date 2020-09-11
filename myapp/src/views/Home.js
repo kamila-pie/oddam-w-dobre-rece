@@ -10,7 +10,7 @@ const Home = () => {
     return (
         <>
             <HomeMain/>
-            {/*<HomeThreeColumns/>*/}
+            <HomeThreeColumns/>
             {/*<HomeSteps/>*/}
             {/*<HomeAboutUs/>*/}
             {/*<HomeWhoWeHelp/>*/}

@@ -1,5 +1,6 @@
 import React from 'react';
 import signature from '../../assets/Signature.svg';
+import people from  '../../assets/People.jpg'
 import {Col, Row} from "react-bootstrap";
 import TitleDecor from "../elements/TitleDecor";
 
@@ -7,7 +8,7 @@ const HomeAboutUs = () => {
     return (
         <section className={'aboutUsSection'} id={'sectionAboutUs'}>
             <Row>
-                <Col sm={7}>
+                <Col >
                     <div className={'aboutWrapper'}>
                         <TitleDecor text={'O nas'}/>
                         <p className={'aboutPar'}> Nori grape silver beet broccoli kombu beet greens fava bean potato
@@ -16,7 +17,7 @@ const HomeAboutUs = () => {
                         <img className={'signature'} src={signature} alt={'signature'}/>
                     </div>
                 </Col>
-                <Col className={'peopleImg'} sm={5}>
+                <Col className={'peopleImg'} >
                     {/*<img src={people}  alt={'people'}/>*/}
                 </Col>
             </Row>

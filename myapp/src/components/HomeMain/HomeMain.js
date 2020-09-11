@@ -4,6 +4,7 @@ import Button from "../elements/Button";
 import HomeHeaderNavMain from "../HomeNav/HomeHeaderNavMain";
 import arrowIcon from "../../assets/Icon-Arrow-Down.svg";
 import {animateScroll as scroll} from "react-scroll";
+import {Link} from "react-router-dom";
 
 const HomeMain = () => {
     return (
@@ -13,8 +14,12 @@ const HomeMain = () => {
                 <div className={'homeMain'}>
                     <TitleDecor text={'Zacznij pomagać! Oddaj niechciane rzeczy w zaufane ręce'}/>
                     <div className={'btnWrapper'}>
-                        <Button text={'ODDAJ RZECZY'}/>
-                        <Button text={'ZORGANIZUJ ZBIÓRKĘ'}/>
+                        <Link to={'/logowanie'}>
+                            <Button text={'ODDAJ RZECZY'}/>
+                        </Link>
+                        <Link to={'/logowanie'}>
+                            <Button text={'ZORGANIZUJ ZBIÓRKĘ'}/>
+                        </Link>
                     </div>
                 </div>
             </div>

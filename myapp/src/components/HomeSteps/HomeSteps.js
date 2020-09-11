@@ -6,6 +6,7 @@ import icon3 from "../../assets/Icon-3.svg";
 import icon4 from "../../assets/Icon-4.svg";
 import TitleDecor from "../elements/TitleDecor";
 import Button from "../elements/Button";
+import {Link} from "react-router-dom";
 
 const HomeSteps = () => {
     return (
@@ -35,7 +36,10 @@ const HomeSteps = () => {
             </Row>
             <Row>
                 <Col className={'StepsBtn'}>
-                    <Button text={'ODDAJ RZECZY'}/>
+                    <Link to={'/logowanie'}>
+                        <Button text={'ODDAJ RZECZY'}/>
+                    </Link>
+
                 </Col>
             </Row>
         </section>

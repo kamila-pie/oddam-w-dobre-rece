@@ -15,19 +15,19 @@ const Fundations = () => {
     };
 
     return (
-        <Container className={'helpContainer'}>
-            <Row>
+        <Container className={'helpContainer'} id={'fundations'}>
+            <Row className={'helpRowTitle'}>
                 <p>{data.foundations.title}</p>
             </Row>
-            <Row className={'HelpDetailsRow'}>
+            <Row className={'helpDetailsRow'}>
                 {currentPosts.map((el) => {
                     return (
-                        <Row key={el.id}>
-                            <Col className={'HelpDetails'}>
+                        <Row key={el.id} className={'helpData'}>
+                            <Col className={'helpDetails'}>
                                 <h2>{el.name}</h2>
                                 <p>{el.desc}</p>
                             </Col>
-                            <Col className={'HelpThings'}>
+                            <Col className={'helpThings'}>
                                 <p>{el.needs}</p>
                             </Col>
                         </Row>

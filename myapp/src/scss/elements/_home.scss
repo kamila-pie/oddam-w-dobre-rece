@@ -94,30 +94,26 @@
 .homeThreeColLaptop {
   margin: 0;
   padding-top: 40px;
-  //flex-basis: 1300px;
   flex-basis: calc(calc(35em - 100vw) * 999);
   flex-grow: 1;
   align-self: flex-end;
   text-align: center;
-  @media (max-width: 768px) {
+  @media (max-width: 780px) {
     padding-top: 50px;
   }
   @media (max-width: 320px) {
     margin: 0;
     padding-top: 0;
   }
-
 }
 
 .homeThreeCol {
   background-image: url("../../assets/3 Columns Background.png");
   background-size: cover;
   height: 50vh;
-  //height: 384px;
   text-align: center;
-  @media (max-width: 768px) {
+  @media (max-width: 670px) {
     height: 100vh;
-    //background-size: 520px;
   }
   @media (max-width: 320px) {
     margin: 0;
@@ -225,7 +221,7 @@
   flex-direction: column;
 
   .aboutPar {
-    font-size: 1.5rem;
+    font-size: 1.1rem;
     line-height: 2.5rem;
     text-align: center;
   }

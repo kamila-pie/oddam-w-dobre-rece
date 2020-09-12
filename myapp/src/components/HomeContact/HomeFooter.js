@@ -9,24 +9,26 @@ import fb from "../../assets/Facebook.svg";
 
 const Footer = () => {
     return (
-       <footer className={'footerContainer'} id={'sectionContact'}>
-           <div className={'footerWrapper'}>
-               <div className={'arrowIconWrapperToTop'} onClick={() => scroll.scrollToTop()}>
-                   <img className={'arrowIcon'} src={arrowIcon} alt={'arrow'}/>
-               </div>
-              <div className={'footerContactForm'}>
-                  <TitleDecor text={'Skontaktuj się z nami'}/>
-                  <HomeContact/>
-                  <Row className={'footer'}>
-                      <p>Copyright by Coders Lab</p>
-                      <Col className={'socialIcons'}>
-                          <img className={'instagram'} src={instagram} alt={'instagram'}/>
-                          <img className={'fb'} src={fb} alt={'facebook'}/>
-                      </Col>
-                  </Row>
-              </div>
-           </div>
-       </footer>
+        <footer className={'footerContainer'} id={'sectionContact'}>
+            <div className={'footerWrapper'}>
+                <div className={'arrowIconWrapperToTop'} onClick={() => scroll.scrollToTop()}>
+                    <img className={'arrowIcon'} src={arrowIcon} alt={'arrow'}/>
+                </div>
+                <div className={'footerContactForm'}>
+                    <TitleDecor text={'Skontaktuj się z nami'}/>
+                    <HomeContact/>
+                </div>
+                <Row className={'footer'}>
+                    <Col>
+                        <p>Copyright by Coders Lab</p>
+                    </Col>
+                    <Col className={'socialIcons'}>
+                        <img className={'instagram'} src={instagram} alt={'instagram'}/>
+                        <img className={'fb'} src={fb} alt={'facebook'}/>
+                    </Col>
+                </Row>
+            </div>
+        </footer>
     )
 }
 

@@ -103,7 +103,7 @@ const HomeContact = () => {
                         </Form.Group>
                     </Row>
 
-                    <Form.Group controlId="exampleForm.ControlTextarea1">
+                    <Form.Group controlId="exampleForm.ControlTextarea1" className={'formTextarea'}>
                         <Form.Label>Wpisz swoją wiadomość</Form.Label>
                         <Form.Control
                             type={'text'}
@@ -117,7 +117,7 @@ const HomeContact = () => {
                         />
                         <Error touched={touched.message} message={errors.message}/>
                     </Form.Group>
-                    <button className={'btn'} variant="primary" type="submit" disabled={isSubmitting}>
+                    <button className={'btn btnForm'} variant="primary" type="submit" disabled={isSubmitting}>
                         Wyślij
                     </button>
                 </Form>

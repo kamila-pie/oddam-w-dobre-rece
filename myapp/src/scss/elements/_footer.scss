@@ -1,9 +1,15 @@
 .footerContainer {
-  height: 100vh;
+  //height: 100vh;
+}
+
+.footerContactForm{
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
 }
 .footerWrapper {
   display: flex;
-  align-items: flex-end;
+  //align-items: flex-end;
   flex-direction: column;
   flex-basis: calc(calc(35em - 100vw) * 999);
   flex-grow: 1;
@@ -40,7 +46,26 @@
   }
 }
 
+Form {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
 
+}
+
+.btnForm {
+  font-size: 1rem;
+  width: 25%;
+}
+
+.footer {
+  display: flex;
+
+}
+.formTextarea {
+  width: 100%;
+}
 
 
 .has-error {

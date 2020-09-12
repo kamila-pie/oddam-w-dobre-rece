@@ -10,7 +10,6 @@
 
 .loginForm, .logoutSection {
   flex-basis: calc(calc(385px - 100vw) * 999);
-  flex-grow: 1;
 }
 .logoutSection a {
   color: $color-secondary;

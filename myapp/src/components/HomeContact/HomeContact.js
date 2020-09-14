@@ -77,7 +77,6 @@ const HomeContact = () => {
                             <Form.Control
                                 type={'text'}
                                 name={'name'}
-                                // id={'name'}
                                 placeholder="First name"
                                 onChange={handleChange}
                                 onBlur={handleBlur}

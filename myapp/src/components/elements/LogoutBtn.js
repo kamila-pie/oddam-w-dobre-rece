@@ -3,9 +3,6 @@ import {NavLink} from "react-router-dom";
 import app from "../../config/firebase";
 
 const LogoutBtn = () => {
-    // const {currentUser} = useContext(AuthContext);
-    //
-    // if (!currentUser) { return <Redirect to={'/wylogowano'}/> }
     return (
         <>
             <button onClick={() => app.auth().signOut()}>

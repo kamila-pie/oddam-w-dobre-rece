@@ -1,5 +1,5 @@
 import React from 'react';
-import {Col, Container, Row} from "react-bootstrap";
+import {Col, Row} from "react-bootstrap";
 import TitleDecor from "../elements/TitleDecor";
 import HomeContact from "./HomeContact";
 import {animateScroll as scroll} from "react-scroll";

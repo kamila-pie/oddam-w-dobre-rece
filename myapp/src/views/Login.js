@@ -8,7 +8,6 @@ import {Formik} from "formik";
 import * as Yup from "yup";
 import Error from "../components/elements/Error";
 import app from "../config/firebase";
-import HomeBurger from "../components/HomeNav/HomeBurger";
 import homeLogNavImg from "../assets/home.png";
 
 const validationLoginSchema = Yup.object().shape({
@@ -55,6 +54,11 @@ const Login = ({history}) => {
                 <Formik
                     initialValues={{email: "", password: ""}}
                     validationSchema={validationLoginSchema}
+                    // onSubmit={handleLogin}
+                    // onSubmit={async values => {
+                    //     await new Promise(r => setTimeout(r, 500));
+                    //     alert(JSON.stringify(values, null, 2));
+                    // }}
                 >
                     {({values, errors, touched, handleChange, handleBlur}) => (
                         <Form className={'loginForm'}

@@ -9,7 +9,8 @@ export const AuthProvider = ({ children }) => {
     const [pending, setPending] = useState(true);
 
     const login = (email, password) => {
-        return app.auth().signInWithEmailAndPassword(email, password)
+        console.log(email);
+       return app.auth().signInWithEmailAndPassword(email, password)
     }
 
     const logout = () => {

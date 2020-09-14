@@ -1,5 +1,5 @@
 import React from 'react';
-import {Col, Row, Carousel} from "react-bootstrap";
+import {Col, Row} from "react-bootstrap";
 
 const HomeThreeColumns = () => {
     return (

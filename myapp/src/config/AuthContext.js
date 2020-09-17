@@ -10,7 +10,7 @@ export const AuthProvider = ({ children }) => {
 
     const login = (email, password) => {
         console.log(email);
-       return app.auth().signInWithEmailAndPassword(email, password)
+        return app.auth().signInWithEmailAndPassword(email, password)
     }
 
     const logout = () => {

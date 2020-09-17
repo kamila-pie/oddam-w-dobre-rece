@@ -14,11 +14,7 @@ const HomeBurger = () => {
 
     return (
         <>
-            <div
-                className={!open ? "burger" : "burger burgerOpen"}
-                onClick={toggleClass}
-                 // onClick={() => setOpen(!open)}
-            >
+            <div className={!open ? "burger" : "burger burgerOpen"} onClick={toggleClass}>
                 <div style={{
                     backgroundColor: `${(open) ? '#ccc' : '#333'}`,
                     transform: `${(open) ? 'rotate(45deg)' : 'rotate(0)'}`
@@ -33,10 +29,7 @@ const HomeBurger = () => {
                     transform: `${(open) ? 'rotate(-45deg)' : 'rotate(0)'}`
                 }}/>
             </div>
-            <HomeHeaderNav
-                open={open}
-                onClick={handleOnClick}
-            />
+            <HomeHeaderNav open={open} onClick={handleOnClick}/>
         </>
     )
 }

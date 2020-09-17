@@ -7,7 +7,6 @@ import {AuthContext} from "../config/AuthContext";
 import {Formik} from "formik";
 import * as Yup from "yup";
 import Error from "../components/elements/Error";
-import app from "../config/firebase";
 import homeLogNavImg from "../assets/home.png";
 
 const validationRegisterSchema = Yup.object().shape({
@@ -26,25 +25,21 @@ const validationRegisterSchema = Yup.object().shape({
 });
 
 const Register = ({history}) => {
-
-
     const handleRegister = useCallback(async e => {
         e.preventDefault();
         const {email, password} = e.target.elements;
         try {
-            await app()
-                .auth()
-                .createUserWithEmailAndPassword(email.value, password.value);
+            await register(email.value, password.value);
             history.push('/');
         } catch (error) {
             alert(error);
         }
     }, [history]);
     const {currentUser, register} = useContext(AuthContext);
-
     if (currentUser) {
         return <Redirect to={'/'}/>
     }
+
     return (
         <>
             <Nav className={'homeLogNav'}>
@@ -61,13 +56,12 @@ const Register = ({history}) => {
                     {({values, errors, touched, handleChange, handleBlur}) => (
                         <Form
                             className={'loginForm'}
-                            onSubmit={handleRegister}
+                            onSubmit={e => handleRegister(e)}
                         >
                             <Container className={'loginFormGroup'}>
                                 <FormGroup>
                                     <Form.Label>Email</Form.Label>
                                     <Form.Control
-                                        // className={'formInput'}
                                         className={touched.email && errors.email ? "formInput has-error" : null}
                                         type={'email'}
                                         name={'email'}
@@ -84,7 +78,6 @@ const Register = ({history}) => {
                                     <Form.Label>Hasło</Form.Label>
                                     <Form.Control
                                         className={'formInput has-error'}
-                                        // className={touched.password && errors.password ? "formInput has-error" : null}
                                         type={'password'}
                                         name={'password'}
                                         id={'password'}
@@ -119,7 +112,6 @@ const Register = ({history}) => {
                                 <button
                                     type={'submit'}
                                     className={'btnAuth btnAction'}
-                                    onClick={register}
                                 >
                                     Załóż konto
                                 </button>

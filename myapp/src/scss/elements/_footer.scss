@@ -4,8 +4,11 @@
 
 .footerContactForm{
   display: flex;
-  align-items: flex-end;
   flex-direction: column;
+  @media (min-width: 600px) {
+    align-items: flex-end;
+    padding-right: 70px;
+  }
 }
 .footerWrapper {
   display: flex;
@@ -17,7 +20,7 @@
   &::after {
     content: "";
     background-image: url("../../assets/Background-Contact-Form.jpg");
-    opacity: 0.5;
+    opacity: 0.3;
     top: 0;
     left: 0;
     bottom: 0;
@@ -27,6 +30,9 @@
     background-size: cover;
     overflow: hidden;
     background-repeat: no-repeat;
+    @media (max-width: 520px) {
+      background-image: none;
+    }
   }
 }
 @media (max-width: 1500px) {
@@ -46,12 +52,27 @@
   }
 }
 
+#sectionContact > div > div.footerContactForm > div > div {
+  @media (min-width: 600px) {
+      margin-right: 70px;
+    }
+}
+
+.form-group > label {
+  padding-bottom: 8px;
+}
+
 Form {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   align-items: flex-end;
-
+  @media (max-width: 600px) {
+    margin: 0 30px;
+  }
+  @media (max-width: 690px) {
+    margin-right: 20px;
+  }
 }
 
 .btnForm {
@@ -84,4 +105,15 @@ Form {
 
 .valid {
   color: green;
+}
+
+.footer.row {
+  margin-top: 10px;
+  align-items: center;
+  .col {
+    text-align: end;
+  }
+  img {
+    padding: 5px;
+  }
 }

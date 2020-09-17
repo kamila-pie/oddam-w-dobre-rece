@@ -9,12 +9,8 @@ const HomeHeaderNav = ({toggleClass, open, setOpen, handleOnClick}) => {
                 className={!open ? "navList" : "navList navList--open"}
                 onClick={toggleClass}
             >
-                <li className={'navEl'}
-                    // onClick={handleOnClick}
-                    // onClick={() => setOpen(!open)}
-                >
+                <li className={'navEl'}>
                     <LinkScroll
-                        // onClick={handleOnClick}
                         activeClass="active"
                         to="main"
                         spy={true}

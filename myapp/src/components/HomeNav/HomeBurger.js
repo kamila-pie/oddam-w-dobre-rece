@@ -14,20 +14,22 @@ const HomeBurger = () => {
 
     return (
         <>
-            <div className={!open ? "burger" : "burger burgerOpen"} onClick={toggleClass}>
-                <div style={{
-                    backgroundColor: `${(open) ? '#ccc' : '#333'}`,
-                    transform: `${(open) ? 'rotate(45deg)' : 'rotate(0)'}`
-                }}/>
-                <div style={{
-                    backgroundColor: `${(open) ? '#ccc' : '#333'}`,
-                    transform: `${(open) ? 'translateX(-100%)' : 'translateX(0)'}`,
-                    opacity: `${(open) ? '0' : '1'}`
-                }}/>
-                <div style={{
-                    backgroundColor: `${(open) ? '#ccc' : '#333'}`,
-                    transform: `${(open) ? 'rotate(-45deg)' : 'rotate(0)'}`
-                }}/>
+            <div className={'burgerWrapper'}>
+                <div className={!open ? "burger" : "burger burgerOpen"} onClick={toggleClass}>
+                    <div style={{
+                        backgroundColor: `${(open) ? '#ccc' : '#333'}`,
+                        transform: `${(open) ? 'rotate(45deg)' : 'rotate(0)'}`
+                    }}/>
+                    <div style={{
+                        backgroundColor: `${(open) ? '#ccc' : '#333'}`,
+                        transform: `${(open) ? 'translateX(-100%)' : 'translateX(0)'}`,
+                        opacity: `${(open) ? '0' : '1'}`
+                    }}/>
+                    <div style={{
+                        backgroundColor: `${(open) ? '#ccc' : '#333'}`,
+                        transform: `${(open) ? 'rotate(-45deg)' : 'rotate(0)'}`
+                    }}/>
+                </div>
             </div>
             <HomeHeaderNav open={open} onClick={handleOnClick}/>
         </>

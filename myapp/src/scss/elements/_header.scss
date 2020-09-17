@@ -37,7 +37,15 @@
     }
   }
 }
-
+.burgerWrapper {
+  @media  (max-width: 780px) {
+    width: 100vw;
+    height: 42px;
+    background-color: $color-accent;
+    position: fixed;
+    z-index: 3;
+  }
+}
 
 .burger {
   width: 2rem;
@@ -45,7 +53,6 @@
   position: fixed;
   top: 15px;
   left: 20px;
-  //display: flex;
   z-index: 10;
   display: none;
   @media (max-width: 768px) {

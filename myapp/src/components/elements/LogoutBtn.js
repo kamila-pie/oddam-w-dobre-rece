@@ -5,8 +5,8 @@ import app from "../../config/firebase";
 const LogoutBtn = () => {
     return (
         <>
-            <button onClick={() => app.auth().signOut()}>
-                <NavLink to={'/wylogowano'}> Logout </NavLink>
+            <button className={'logoutBtn'} onClick={() => app.auth().signOut()}>
+                <NavLink to={'/wylogowano'} > Wyloguj </NavLink>
             </button>
         </>
     )

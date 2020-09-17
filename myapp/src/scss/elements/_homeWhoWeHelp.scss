@@ -40,7 +40,7 @@
 
 .helpDetailsRow {
   font-family: $font-alt;
-  margin: 20px auto;
+  margin: 30px auto 20px;
   display: flex;
 }
 .helpData {
@@ -56,7 +56,6 @@
   }
 }
 .helpDetails {
-  width: 80vw;
   h2 {
     font-size: 26px;
     margin-bottom: 10px;
@@ -73,6 +72,15 @@
   justify-content: center;
   .page-link {
     cursor: pointer;
+  }
+}
+
+@media (max-width: 700px) {
+  .helpData.row {
+    flex-direction: column;
+  }
+  .helpThings {
+    justify-content: flex-start;
   }
 
 }

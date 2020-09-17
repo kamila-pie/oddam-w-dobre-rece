@@ -1,8 +1,12 @@
-import React from 'react';
+import React, {useContext} from 'react';
 import {Nav} from "react-bootstrap";
 import {Link as LinkScroll} from "react-scroll";
+import {Link} from "react-router-dom";
+import {AuthContext} from "../../config/AuthContext";
+import LogoutBtn from "../elements/LogoutBtn";
 
 const HomeHeaderNav = ({toggleClass, open, setOpen, handleOnClick}) => {
+    const {currentUser} = useContext(AuthContext);
     return (
         <Nav className={'navLinkContainer'}>
             <ul
@@ -26,7 +30,7 @@ const HomeHeaderNav = ({toggleClass, open, setOpen, handleOnClick}) => {
                         to="sectionAllAbout"
                         spy={true}
                         smooth={true}
-                        offset={0}
+                        offset={-50}
                         duration={500}
                     >O co chodzi?</LinkScroll>
                 </li>
@@ -36,7 +40,7 @@ const HomeHeaderNav = ({toggleClass, open, setOpen, handleOnClick}) => {
                         to="sectionAboutUs"
                         spy={true}
                         smooth={true}
-                        offset={0}
+                        offset={-50}
                         duration={500}
                     >O nas</LinkScroll>
                 </li>
@@ -46,7 +50,7 @@ const HomeHeaderNav = ({toggleClass, open, setOpen, handleOnClick}) => {
                         to="sectionHelp"
                         spy={true}
                         smooth={true}
-                        offset={0}
+                        offset={-50}
                         duration={500}
                     >Fundacja i organizacje</LinkScroll>
                 </li>
@@ -56,11 +60,13 @@ const HomeHeaderNav = ({toggleClass, open, setOpen, handleOnClick}) => {
                         to="sectionContact"
                         spy={true}
                         smooth={true}
-                        offset={0}
+                        offset={-30}
                         duration={500}
                     >Kontakt</LinkScroll>
                 </li>
+
             </ul>
+
         </Nav>
     )
 }

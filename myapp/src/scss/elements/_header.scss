@@ -38,7 +38,7 @@
   }
 }
 .burgerWrapper {
-  @media  (max-width: 780px) {
+  @media  (max-width: 772px) {
     width: 100vw;
     height: 42px;
     background-color: $color-accent;
@@ -67,6 +67,25 @@
     border-radius: 10px;
     transform-origin: 1px;
     transition: all 0.3s linear;
+  }
+}
+
+.userHello {
+  position: absolute;
+  top: 13px;
+  left: 74px;
+  @media  (min-width: 772px) {
+    display: block;
+    //visibility: hidden;
+  }
+}
+
+.logoutBtn {
+  position: absolute;
+  top: 7px;
+  right: 9px;
+  @media  (min-width: 772px) {
+    display: block;
   }
 }
 

@@ -7,6 +7,12 @@
   }
 }
 
+#main > div.homeMainWrapper > div > div.row > div {
+  @media (max-width: 780px) {
+    margin: 0 auto;
+  }
+}
+
 .homeMainWrapper {
   display: flex;
   flex-direction: column;
@@ -61,19 +67,22 @@
 .arrowIconWrapper {
   position: absolute;
   z-index: 1;
-  bottom: 0;
-  left: 0;
+  bottom: 11px;
+  right: 0;
   cursor: pointer;
-  color: $color-secondary;
+  img {
+    opacity: 0.5;
+  }
 
   img:hover {
     animation: scrollTop 0.5s alternate ease infinite;
+    opacity: 1;
   }
 }
 
 .arrowIconWrapperToTop {
-  position: relative;
-  bottom: 0;
+  position: absolute;
+  bottom: 447px;
   right: 0;
   cursor: pointer;
 
@@ -98,9 +107,6 @@
   flex-grow: 1;
   align-self: flex-end;
   text-align: center;
-  @media (max-width: 780px) {
-    padding-top: 50px;
-  }
   @media (max-width: 320px) {
     margin: 0;
     padding-top: 0;

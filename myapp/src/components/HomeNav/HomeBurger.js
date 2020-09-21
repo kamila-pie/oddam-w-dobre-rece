@@ -43,12 +43,9 @@ const HomeBurger = () => {
                 ) : null}
                 {currentUser ? null : (
                     <>
-                        <div className={'navEl logAction'}>
+                        {/*<div className={'navEl logAction'}>*/}
                             <LoginBtn/>
                             <RegisterBtn/>
-                        </div>
-                        {/*<div className={'navEl'}>*/}
-                        {/*    */}
                         {/*</div>*/}
                     </>
                 )}

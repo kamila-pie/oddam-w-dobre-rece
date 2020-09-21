@@ -3,6 +3,8 @@ import HomeHeaderNav from "./HomeHeaderNav";
 import {AuthContext} from "../../config/AuthContext";
 import LogoutBtn from "../elements/LogoutBtn";
 import {Link} from "react-router-dom";
+import RegisterBtn from "../elements/RegisterBtn";
+import LoginBtn from "../elements/LoginBtn";
 
 const HomeBurger = () => {
     const [open, setOpen] = useState(false);
@@ -39,18 +41,15 @@ const HomeBurger = () => {
                         Cześć, {currentUser.email}!
                     </div>
                 ) : null}
-                {currentUser ? <LogoutBtn/> : (
+                {currentUser ? null : (
                     <>
-                        <div className={'navEl'}>
-                            <Link>
-                                Zaloguj
-                            </Link>
+                        <div className={'navEl logAction'}>
+                            <LoginBtn/>
+                            <RegisterBtn/>
                         </div>
-                        <div className={'navEl'}>
-                            <Link>
-                                Rejestracja
-                            </Link>
-                        </div>
+                        {/*<div className={'navEl'}>*/}
+                        {/*    */}
+                        {/*</div>*/}
                     </>
                 )}
             </div>

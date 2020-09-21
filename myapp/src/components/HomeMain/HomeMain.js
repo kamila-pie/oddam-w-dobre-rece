@@ -14,10 +14,10 @@ const HomeMain = () => {
                 <div className={'homeMain'}>
                     <TitleDecor text={'Zacznij pomagać! Oddaj niechciane rzeczy w zaufane ręce'}/>
                     <div className={'btnWrapper'}>
-                        <Link to={'/logowanie'}>
+                        <Link to={'/strona_w_budowie'}>
                             <Button text={'ODDAJ RZECZY'}/>
                         </Link>
-                        <Link to={'/logowanie'}>
+                        <Link to={'/strona_w_budowie'}>
                             <Button text={'ZORGANIZUJ ZBIÓRKĘ'}/>
                         </Link>
                     </div>

@@ -42,9 +42,11 @@
   font-family: $font-alt;
   margin: 30px auto 20px;
   display: flex;
+  width: 100%;
 }
 .helpData {
   position: relative;
+  width: 100%;
   &:not(:last-child):after {
     content: "";
     position: absolute;
@@ -53,16 +55,19 @@
     width: 97%;
     left: 16px;
     top: 113%;
+    @media (max-width: 380px) {
+      top: 110%
+    }
   }
 }
 .helpDetails {
+  width: 100%;
   h2 {
     font-size: 26px;
     margin-bottom: 10px;
   }
 }
 .helpThings {
-  //text-align: right;
   display: flex;
   align-items: flex-end;
   justify-content: flex-end;

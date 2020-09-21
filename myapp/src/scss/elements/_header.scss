@@ -14,7 +14,6 @@
   flex-flow: row nowrap;
   cursor: pointer;
   @media (max-width: 768px) {
-    //display: none;
     transform: translateX(-100%);
     flex-flow: column nowrap;
     background-color: $color-primary;
@@ -71,21 +70,41 @@
 }
 
 .userHello {
-  position: absolute;
-  top: 13px;
-  left: 74px;
-  @media  (min-width: 772px) {
-    display: block;
-    //visibility: hidden;
+  right: 214px;
+  position: relative;
+  bottom: 30px;
+  @media  (max-width: 772px) {
+    position: absolute;
+    top: 13px;
+    left: 74px;
   }
 }
 
 .logoutBtn {
-  position: absolute;
+  position: relative;
   top: 7px;
   right: 9px;
-  @media  (min-width: 772px) {
-    display: block;
+  border: 1px solid $color-accent;
+  background-color: white;
+  margin-right: 17px;
+  &:active {
+    background-color: $color-accent;
+  }
+
+  a {
+    text-decoration: none;
+    color: $color-secondary;
+  }
+}
+
+@media  (max-width: 772px) {
+  .login {
+    top: 1px;
+    left: 11px;
+  }
+  .register {
+    top: 1px;
+    right: 3px;
   }
 }
 
@@ -109,6 +128,9 @@
     text-decoration: none;
     color: $color-secondary;
     font-size: 18px;
+    @media (min-width: 780px) {
+      offset: 0;
+    }
   }
 }
 

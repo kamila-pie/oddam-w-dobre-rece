@@ -36,10 +36,9 @@ const HomeSteps = () => {
             </Row>
             <Row>
                 <Col className={'StepsBtn'}>
-                    <Link to={'/logowanie'}>
+                    <Link to={'/strona_w_budowie'}>
                         <Button text={'ODDAJ RZECZY'}/>
                     </Link>
-
                 </Col>
             </Row>
         </section>

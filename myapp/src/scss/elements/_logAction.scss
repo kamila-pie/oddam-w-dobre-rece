@@ -4,8 +4,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 2em;
-  height: calc(100vh - 45px);
 }
 
 .loginForm, .logoutSection {
@@ -31,7 +29,6 @@
   min-height: 30px;
   font-weight: 300;
   cursor: pointer;
-  //flex-grow: 1;
   background-color: transparent;
   border: none;
   padding: 13px 15px;
@@ -61,4 +58,9 @@
     margin: 0 5px 0 20px;
     opacity: 0.3;
   }
+}
+
+.logAction {
+  margin: 0 0 7px;
+  padding: 0;
 }
